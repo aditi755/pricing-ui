@@ -5,6 +5,7 @@ import Card from './ui/Card'
 import pricingData from '../data/pricingData.json'; 
 
 function Pricing() {
+    //state to handle the monthly and annual toggle button along with its position
     const [activePlan, setActivePlan] = useState('monthly');
     const [buttonPosition, setButtonPosition] = useState(0); 
 
@@ -32,11 +33,9 @@ function Pricing() {
                     onClick={() => handleClick('annual', '50%')}
                 >
                     Annual
-                </button>
- 
-               
-            </div>
-
+                </button>               
+                </div>
+           {/* pass all the data as prop to reusable card ui component */}
             <div className="mt-10 flex gap-5 ">
                 {pricingData.cards.map((card, index) => (
                     <Card 

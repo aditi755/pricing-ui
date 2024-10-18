@@ -1,7 +1,7 @@
 {
   "cards": [
     {
-     "index": 1, 
+     "id": 1, 
       "label": "Trial",
       "title": "Try now",
       "paragraph": "Get personalized template",
@@ -19,7 +19,7 @@
        "style": { "backgroundColor": "white" }
     },
     {
-      "index": 2, 
+      "id": 2, 
       "label": "Growth",
       "title": "$229",
       "spanTime": "/month",
@@ -41,7 +41,7 @@
      "style": { "backgroundColor": "white" }
     },
     {
-      "index":3,
+      "id":3,
       "label": "Booster",
       "title": "$499",
       "spanTime": "/month",
@@ -67,7 +67,7 @@
       "grayBullets": false
     },
     {
-      "index": 4, 
+      "id": 4, 
       "label": "Enterprise",
       "title": "Contact Us",
       "paragraph": "For Individual pricing",
