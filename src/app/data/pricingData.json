@@ -1,0 +1,89 @@
+{
+  "cards": [
+    {
+     "index": 1, 
+      "label": "Trial",
+      "title": "Try now",
+      "paragraph": "Get personalized template",
+      "items": [
+        "25+ data sources",
+        "GPT4, Linkedin and Others",
+        "Access to slack Community",
+        "10+ templates to scale your outbound"
+      ],
+      "info": [
+        "Explore Product Capabilities"
+      ],
+      "grayBullets": true,
+      "className": "bg-white",
+       "style": { "backgroundColor": "white" }
+    },
+    {
+      "index": 2, 
+      "label": "Growth",
+      "title": "$229",
+      "spanTime": "/month",
+      "items": [
+        "8000 Credits",
+        "GPT4, Linkedin and Others",
+        "Access to slack Community",
+        "10+ templates to scale your outbound"
+      ],
+      "info": [
+        "25+ data sources"
+      ],
+      "highlightFirstItem": true,
+      "showPrice": true,
+      "discount": "50% off",
+      "price": "$229",
+      "grayBullets": true,
+      "className": "bg-white",
+     "style": { "backgroundColor": "white" }
+    },
+    {
+      "index":3,
+      "label": "Booster",
+      "title": "$499",
+      "spanTime": "/month",
+      "items": [
+        "25+ data sources",
+        "GPT4, Linkedin and Others",
+        "Access to slack Community",
+        "10+ templates to scale your outbound"
+      ],
+      "info": [
+        "Unlimited leads search",
+        "Fully Enriched lead results",
+        "Personalised Outreach at scale"
+      ],
+      "className": "bg-[linear-gradient(180deg,#1E429F_0%,#0B1839_100%)] text-white",
+      "style": { 
+        "background": "linear-gradient(180deg, #1E429F 0%, #0B1839 100%)", 
+        "color": "white" 
+      },
+      "showPrice": true,
+      "discount": "50% off",
+      "price": "$499",
+      "grayBullets": false
+    },
+    {
+      "index": 4, 
+      "label": "Enterprise",
+      "title": "Contact Us",
+      "paragraph": "For Individual pricing",
+      "items": [
+        "25+ data sources",
+        "GPT4, Linkedin and Others",
+        "Access to slack Community",
+        "10+ templates to scale your outbound"
+      ],
+      "info": [
+        "Perfect for high End-to-End CRM Data Enrichment",
+        "Unlimited lists of leads with end to end data"
+      ],
+      "grayBullets": true,
+      "className": "bg-white",
+       "style": { "backgroundColor": "white" }
+    }
+  ]
+}
