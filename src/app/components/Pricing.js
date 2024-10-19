@@ -36,7 +36,7 @@ function Pricing() {
                 </button>               
                 </div>
            {/* pass all the data as prop to reusable card ui component */}
-            <div className="mt-10 flex gap-5 ">
+            <div className="mt-10 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
                 {pricingData.cards.map((card, index) => (
                     <Card 
                         key={index}
