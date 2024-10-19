@@ -48,12 +48,16 @@ function Pricing() {
                         grayBullets={card.grayBullets}
                         showPrice={card.showPrice}
                         discount={card.discount}
+                        highlightPrice={card.highlightPrice}
                         price={card.price}
                         className={card.className} 
                         style={card.style}
                         highlightFirstItem={card.highlightFirstItem}
+                        spanTime={card.spanTime}
+                        
                     >
-                        <Button className="mt-16 text-center" text={`Continue with ${card.label}`}>      
+                        <Button className={`mt-16 text-center ${index === 2 ? 'bg-white text-black' : 'bg-blue-600 text-white'}`}
+                        text={card.buttonText}>      
                         </Button>
                     </Card>
                 ))}

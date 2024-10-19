@@ -4,7 +4,7 @@ import Button from './Button';
 
 // Accepts multiple props to render different parts of the card dynamically
 const Card = ({ 
-  children, className, style, title, paragraph,items,label, spanTime, highlightIndex, highlightFirstItem, showPrice, discount, price, info, grayBullets 
+  children, className, style, title, paragraph,items,label, spanTime, highlightIndex, highlightFirstItem, showPrice, discount, price, info, grayBullets, highlightPrice 
 }) => {
   return (
     <div 
@@ -22,20 +22,25 @@ const Card = ({
       {/* Conditionally render the price section if showPrice is true */}
       {showPrice && (
         <div className="flex flex-row gap-2 mt-2"> {/* Discount and original price */}
-          <span className="bg-green-300 text-green-700 rounded-lg w-20 text-center">{discount}</span> {/* Discount label */}
-          <p className="text-gray-500 text-xl font-extrabold line-through">{price}</p> {/* Original price with strikethrough */}
+          <span 
+  className="text-green-700 rounded-lg text-center w-[76px] h-[22px] font-medium"
+  style={{ backgroundColor: 'var(--Component-Colors-Utility-Success-50, #ECFDF3)' }}
+>
+  {discount}
+</span> {/* Discount label */}
+          <p className={`text-xl font-extrabold line-through ${highlightPrice ? 'text-white' : 'text-gray-500'}`}>{price}</p> {/* Original price with strikethrough */}
         </div>
       )}
 
       <p className="mt-1 text-sm">{paragraph}</p> {/* Paragraph description */}
 
       {/* Render the list of items passed through the items prop */}
-      <ul className="mt-10 list-none h-[412px]"> 
+      <ul className="mt-8 list-none h-[412px]"> 
         {items.map((item, index) => (
         <div className="flex flex-row mt-5" key={index}> {/* Each list item with checkmark */}
-          <IoIosCheckmarkCircle className={`mr-2 ${highlightFirstItem && index === 0 ? 'text-blue-500' : ''}`} /> {/* Checkmark icon, blue if the first item is highlighted */}
+          <IoIosCheckmarkCircle className={`mr-2 ${highlightFirstItem && index === 0 ? 'text-blue-700' : ''}`} /> {/* Checkmark icon, blue if the first item is highlighted */}
           <li className={grayBullets ? "text-gray-500" : ""}> {/* Optional gray text for bullet */}
-            <div className={`${highlightFirstItem && index === 0 ? 'text-blue-500' : ''}`}>{item}</div> {/* Highlight first item text in blue */}
+            <div className={`${highlightFirstItem && index === 0 ? 'text-blue-700 font-bold' : ''}`}>{item}</div> {/* Highlight first item text in blue */}
           </li>
         </div>
         ))}

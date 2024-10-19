@@ -16,6 +16,7 @@
       ],
       "grayBullets": true,
       "className": "bg-white",
+      "buttonText": "Try Now",
        "style": { "backgroundColor": "white" }
     },
     {
@@ -28,16 +29,19 @@
         "GPT4, Linkedin and Others",
         "Access to slack Community",
         "10+ templates to scale your outbound"
+        
       ],
       "info": [
-        "25+ data sources"
+       "Perfect for high End-to-End CRM ",
+        "Unlimited lists of leads with end to end data"
       ],
       "highlightFirstItem": true,
       "showPrice": true,
       "discount": "50% off",
-      "price": "$229",
+      "price": "$429",
       "grayBullets": true,
       "className": "bg-white",
+      "buttonText": "Continue with Growth",
      "style": { "backgroundColor": "white" }
     },
     {
@@ -47,6 +51,10 @@
       "spanTime": "/month",
       "items": [
         "25+ data sources",
+        "GPT4, Linkedin and Others",
+        "Access to slack Community",
+        "10+ templates to scale your outbound",
+        "8000 Credits",
         "GPT4, Linkedin and Others",
         "Access to slack Community",
         "10+ templates to scale your outbound"
@@ -63,8 +71,10 @@
       },
       "showPrice": true,
       "discount": "50% off",
-      "price": "$499",
-      "grayBullets": false
+      "price": "$999",
+      "highlightPrice":true ,
+      "grayBullets": false,
+      "buttonText": "Continue with Growth"
     },
     {
       "id": 4, 
@@ -83,6 +93,7 @@
       ],
       "grayBullets": true,
       "className": "bg-white",
+      "buttonText": "Try Now",
        "style": { "backgroundColor": "white" }
     }
   ]
