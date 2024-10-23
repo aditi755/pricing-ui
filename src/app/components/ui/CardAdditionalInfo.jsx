@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CardAdditionalInfo = ({ info, grayBullets }) => {
+const CardAdditionalInfo = ({ info, grayBullets, children }) => {
   return (
     <div className="border-t-[1px] h-[112px] border-solid border-blue-400">
       <ul className="list-disc pl-5 gap-5 mt-6">
@@ -9,7 +9,7 @@ const CardAdditionalInfo = ({ info, grayBullets }) => {
             {ele}
           </li>
         ))}
-      </ul>
+      </ul>      
     </div>
   );
 };
